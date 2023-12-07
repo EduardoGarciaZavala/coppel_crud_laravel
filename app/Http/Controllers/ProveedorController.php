@@ -66,7 +66,7 @@ class ProveedorController extends Controller
                     'email',
                     Rule::unique('proveedores')->ignore($id),
                 ],
-                'telefono' => 'required|max:250',
+                'telefono' => 'required|max:10',
                 'direccion' => 'required|max:300'
             ]
         );
